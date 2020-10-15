@@ -18,7 +18,7 @@ export class HeroService {
   };
 
   constructor(
-    private http: HttpClient,
+    private http: HttpClient,  //inject HttpClient into the constructor in a private property called http.
     private messageService: MessageService) { }
 
   /** GET heroes from the server */

@@ -12,8 +12,9 @@ export class DashboardComponent implements OnInit {
 
   constructor(private heroService: HeroService) { }
 
-  ngOnInit() {
-    this.getHeroes();
+  ngOnInit() { 
+    this.getHeroes(); //This getHeroes() returns the sliced list of heroes at positions 1 and 5, 
+                      //returning only four of the Top Heroes (2nd, 3rd, 4th, and 5th)
   }
 
   getHeroes(): void {

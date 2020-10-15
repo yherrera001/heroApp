@@ -1,5 +1,8 @@
+//Get the route that created it
+//Extract the id from the route
+//Acquire the hero with that id from the server via the HeroService
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute } from '@angular/router'; 
 import { Location } from '@angular/common';
 
 import { Hero } from '../hero';
@@ -13,7 +16,8 @@ import { HeroService } from '../hero.service';
 export class HeroDetailComponent implements OnInit {
   hero: Hero;
 
-  constructor(
+  constructor(    //Injecting the ActivatedRoute, HeroService, 
+    //and Location services into the constructor, saving their values in private fields:
     private route: ActivatedRoute,
     private heroService: HeroService,
     private location: Location

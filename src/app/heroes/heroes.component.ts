@@ -4,7 +4,7 @@ import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
 
 @Component({
-  selector: 'app-heroes',
+  selector: 'app-heroes',   //generates the three files of the HeroesComponent along with a test file.
   templateUrl: './heroes.component.html',
   styleUrls: ['./heroes.component.css']
 })
